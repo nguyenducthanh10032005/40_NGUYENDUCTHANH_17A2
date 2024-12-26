@@ -10,9 +10,9 @@ class JSONReader:
     def display_data(self):
         if self.data:
             for user in self.data:
-                print(f"Name: {user['name']}, Age: {user['age']}, \Address:{user['address']}")
+               print(f"Name: {user['name']}, Age: {user['age']}, \\Address:{user['address']}")
 # Sử dụng lớp JSONReader
-path = 'F:/Bài Tập Chương PYTHON/Bài tập chương 2/baitapchuong2/17A2DHKL/LAB 1/DATA/users.json'
+path = 'F:/Bài Tập Chương PYTHON/Bài tập chương 2/BAI TAP PYTHON/17A2DHKL/LAB 1/users.json'
 reader = JSONReader(path)
 reader.read_json()
 reader.display_data()
